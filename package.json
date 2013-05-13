@@ -1,0 +1,23 @@
+{
+  "name": "ExpresSEO",
+  "description": "Expresseo =========",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.2.4",
+    "phantom": "0.4.2"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "2b40761afbb27c5bbee043280679f674478168ba",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paulcurley/Expresseo.git"
+  },
+  "author": "Paul Curley",
+  "license": "BSD"
+}
