@@ -11,12 +11,12 @@ var express = require('express'),
             html += data.toString();
         });
         phantom.on('exit', function(code) {
-            callback(content);
+            callback(html);
         });
     },
 
     serve = function(req, res) {
-        console.log(req)
+        //console.log(req)
         var url = "http://paulcurley.github.io/Expresseo"; // static for now
         fetch(url, function(content) {
             res.send(content);
