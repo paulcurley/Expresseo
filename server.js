@@ -7,6 +7,16 @@ page.open(system.args[1], function (status) {
 });
 
 page.onLoadFinished = function(status) {
-    console.log(page.content)
+    var p = page.evaluate(function () {
+        
+        var scripts = document.getElementsByTagName('script');
+        var i = scripts.length;
+        while (i--) {
+            scripts[i].parentNode.removeChild(scripts[i]);
+        }
+        return  html = document.getElementsByTagName('html')[0].innerHTML;
+                
+    });
+    console.log(p);
     phantom.exit();
 };
